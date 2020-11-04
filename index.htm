@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <form action="https://google.com.vn" method="GET">
+            <fieldset>
+                  <legend>Khung tìm kiếm</legend>
+                  <input type="text"name="q">
+                  <input type="submit" value="Tìm kiếm">
+            </fieldset>
+
+      </form>
+      <br>
+      <form action="/contact.html" method="GET">
+            <fieldset>
+                  <legend>Gửi thông tin cá nhân</legend>
+                  <label for="name">Họ và tên</label>
+                  <input type="text"name="name" required>
+                  <br>
+                  <label for="age">Tuổi</label>
+                  <input type="number" name="age">
+                  <br>
+                  <label for="gender">Giới tính</label>
+                  <select name="gender" id="gender">
+                        <option value="ml">Male</option>
+                        <option value="fl">Female</option>
+                        <option value="ot">Other</option>
+                  </select>
+                  <br>
+                  <label for="birthday">Ngày tháng năm sinh: </label>
+                  <input type="date" name="birthday">
+                  <br>
+                  <label for="email">Email:</label>
+                  <input type="email" name="email">
+                  <br>
+                  <input type="submit" value="SUBMIT">
+                  <input type="reset" value="RESET">
+            </fieldset>
+      </form>
+</body>
+</html>
