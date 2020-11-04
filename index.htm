@@ -18,28 +18,82 @@
       <form action="/contact.html" method="GET">
             <fieldset>
                   <legend>Gửi thông tin cá nhân</legend>
-                  <label for="name">Họ và tên</label>
-                  <input type="text"name="name" required>
-                  <br>
-                  <label for="age">Tuổi</label>
-                  <input type="number" name="age">
-                  <br>
-                  <label for="gender">Giới tính</label>
-                  <select name="gender" id="gender">
-                        <option value="ml">Male</option>
-                        <option value="fl">Female</option>
-                        <option value="ot">Other</option>
-                  </select>
-                  <br>
-                  <label for="birthday">Ngày tháng năm sinh: </label>
-                  <input type="date" name="birthday">
-                  <br>
-                  <label for="email">Email:</label>
-                  <input type="email" name="email">
-                  <br>
+                  <table>
+                        <tr>
+                              <td>
+                                    <label for="name">Họ và tên</label>
+                              </td>
+                              <td>
+                                    <input type="text"name="name" require>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td>
+                                    <label for="age">Tuổi</label>
+                              </td>
+                              <td>
+                                    <input type="number" name="age">
+                              </td>
+                        </tr>
+                        <tr>
+                              <td>
+                                    <label for="gender">Giới tính</label>
+                              </td>
+                              <td>
+                                    <select name="gender" id="gender">
+                                          <option value="ml">Male</option>
+                                          <option value="fl">Female</option>
+                                          <option value="ot">Other</option>
+                                    </select>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td>
+                                    <label for="birthday">Ngày tháng năm sinh: </label>
+                              </td>
+                              <td>
+                                    <input type="date" name="birthday" min="1992-01-01" max="2050-01-01" required>
+                              </td>
+                        </tr>
+                        <tr>
+                              <td>
+                                    <label for="email">Email:</label>
+                              </td>
+                              <td>
+                                    <input type="email" name="email">
+                              </td>
+                        </tr>
+                  </table>
                   <input type="submit" value="SUBMIT">
                   <input type="reset" value="RESET">
             </fieldset>
       </form>
+      <!-- <table border="1">
+            <caption>BẢNG ĐIỂM CỦA LỚP</caption>
+            <thead>
+                  <tr>
+                        <th rowspan="2">STT</th>
+                        <th rowspan="2">Họ và tên</th>
+                        <th colspan="3">Điểm</th>
+                        <th rowspan="2">ĐTB</th>
+                  </tr>
+                  <tr>
+                        <th>Toán</th>
+                        <th>Lý</th>
+                        <th>Hóa</th>
+                  </tr>
+            </thead>
+            <tbody>
+                  <tr>
+                        <td>1</td>
+                        <td>Tân</td>
+                        <td>7</td>
+                        <td>5</td>
+                        <td>9</td>
+                        <td>7</td>
+                  </tr>
+
+            </tbody>
+      </table> -->
 </body>
 </html>
