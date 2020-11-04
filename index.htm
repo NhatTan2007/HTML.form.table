@@ -4,9 +4,14 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
+      <style>
+            .orderform {      
+                  font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+            }
+      </style>
 </head>
 <body>
-      <form action="https://google.com.vn" method="GET">
+      <!-- <form action="https://google.com.vn" method="GET">
             <fieldset>
                   <legend>Khung tìm kiếm</legend>
                   <input type="text"name="q">
@@ -67,7 +72,7 @@
                   <input type="submit" value="SUBMIT">
                   <input type="reset" value="RESET">
             </fieldset>
-      </form>
+      </form> -->
       <!-- <table border="1">
             <caption>BẢNG ĐIỂM CỦA LỚP</caption>
             <thead>
@@ -95,5 +100,83 @@
 
             </tbody>
       </table> -->
+      <form class="orderform" action="simpleform.html" method="GET">
+            <fieldset>
+                  <legend>Order Form</legend>
+                  <table>
+                        <thead></thead>
+                        <tbody>
+                              <tr>
+                                    <td>
+                                          <label for="product">What would you like to buy: </label>
+                                    </td>
+                                    <td>
+                                          <select name="product" id="">
+                                                <option value="A">A</option>
+                                                <option value="B">B (+ 0.5$)</option>
+                                                <option value="C">C (+ 0.5$)</option>
+                                          </select>
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td rowspan="3">
+                                          <label for="productnumber">How many would you like to order: </label>
+                                    </td>
+                                    <td>
+                                          <input type="radio" name="productnumber" value="10">
+                                          <label for="productnumber">1 - $10</label>
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td>
+                                          <input type="radio" name="productnumber" value="20">
+                                          <label for="productnumber">2 - $20</label>
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td>
+                                          <input type="radio" name="productnumber" value="25">
+                                          <label for="productnumber">2 - $25</label>
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td rowspan="2">Name <strong style="color: red;">*</strong></td>
+                                    <td>
+                                          <input type="text" name="firstname" placeholder="First name" required>
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td>
+                                          <input type="text" name="lastname" placeholder="Last name" required>
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td>
+                                          <label for="email">Email:</label>
+                                    </td>
+                                    <td>
+                                          <input type="email" name="email">
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td>
+                                          <label for="phonenumber">Phone number:</label>
+                                    </td>
+                                    <td>
+                                          <input type="number" name="phonenumber" size="5"> - 
+                                          <input type="number" name="phonenumber" size="5"> - 
+                                          <input type="number" name="phonenumber" size="5">
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td>
+                                          <input type="submit" value="SUBMIT">
+                                    </td>
+                              </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                  </table>
+            </fieldset>
+      </form>
 </body>
 </html>
