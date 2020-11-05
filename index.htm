@@ -196,7 +196,7 @@
 
       <!-- [Bài tập] Tạo form đơn giản -->
       <!-- Form sở thích -->
-      <form action="" style="background-color: aqua;width: 30%;padding: 10px 0;">
+      <!-- <form action="" style="background-color: aqua;width: 30%;padding: 10px 0;">
             <div style="background-color: white;margin: 0 auto;width: 90%;padding: 5px 0;">
                   <table style="margin: 0 auto;width: 98%;">
                         <caption style="background-color: orangered; color:white;padding: 5px 0;margin: 0 auto;"><strong>SỞ THÍCH CỦA BẠN</strong></caption>
@@ -264,6 +264,85 @@
                                     </td>
                               </tr>
                         </tbody>
+                  </table>
+            </div>
+            
+      </form> -->
+
+      <!-- Form đăng ký học viện -->
+      <form action="">
+            <div style="background-color: #FFFF81;width: 20%;padding: 5px;">
+                  <table style="width: 100%;">
+                        <caption style="text-align: left;background-color:aquamarine;padding: 5px;">
+                              <strong>ĐĂNG KÝ HỌC VIÊN</strong>
+                        </caption>
+                        <thead></thead>
+                        <tbody>
+                              <tr>
+                                    <td><label for="fullname">Họ và tên</label></td>
+                                    <td colspan="2"><input type="text" name="fullname" required></td>
+                              </tr>
+                              <tr>
+                                    <td><label for="dateofbirth">Ngày sinh</label></td>
+                                    <td colspan="2"><input type="date" name="dateofbirth"></td>
+                              </tr>
+                              <tr>
+                                    <td><label for="gender"></label>Giới tính</td>
+                                    <td><input type="radio" name="gender">Nam</td>
+                                    <td><input type="radio" name="gender">Nữ</td>
+                              </tr>
+                              <tr>
+                                    <td><label for="address">Địa chỉ</label></td>
+                                    <td colspan="2"><textarea name="adress" cols="30" rows="4"></textarea></td>
+                              </tr>
+                              <tr>
+                                    <td><label for="class">Lớp</label></td>
+                                    <td colspan="2">
+                                          <select name="class">
+                                                <option value="default">---Chọn lớp---</option>
+                                                <optgroup label="Lớp 10">
+                                                      <option value="10a1">10A1</option>
+                                                      <option value="10a2">10A2</option>
+                                                      <option value="10a3">10A3</option>
+                                                      <option value="10a4">10A4</option>
+                                                      <option value="10a5">10A5</option>
+                                                </optgroup>
+                                                <optgroup label="Lớp 11">
+                                                      <option value="11a1">11A1</option>
+                                                      <option value="11a2">11A2</option>
+                                                      <option value="11a3">11A3</option>
+                                                      <option value="11a4">11A4</option>
+                                                      <option value="11a5">11A5</option>
+                                                </optgroup>
+                                                <optgroup label="Lớp 12">
+                                                      <option value="12a1">12A1</option>
+                                                      <option value="12a2">12A2</option>
+                                                      <option value="12a3">12A3</option>
+                                                      <option value="12a4">12A4</option>
+                                                      <option value="12a5">12A5</option>
+                                                </optgroup>
+                                          </select>
+                                    </td>
+                              </tr>
+                              <tr>
+                                    <td><label for="email">Email</label></td>
+                                    <td colspan="2"><input type="email" name="email"></td>
+                              </tr>
+                              <tr>
+                                    <td><label for="phonenumber">Điện thoại</label></td>
+                                    <td colspan="2"><input type="tel" name="phonenumber"></td>
+                              </tr>
+                              <tr>
+                                    <td></td>
+                                    <td>
+                                          <input type="submit" value="Đăng ký">
+                                    </td>
+                                    <td>
+                                          <input type="reset" value="Nhập lại">
+                                    </td>
+                              </tr>
+                        </tbody>
+                        <tfoot></tfoot>
                   </table>
             </div>
             
